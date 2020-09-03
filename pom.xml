@@ -14,6 +14,7 @@
 	<name>junit-demo</name>
 	<description>Demo project for junit-demo</description>
 <!-- change from firstbranch -->
+<!-- Second change from first branch -->
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
