@@ -3,8 +3,6 @@ package com.nextsky.junitdemo.area;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.Map;
-
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -13,11 +11,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.RepetitionInfo;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInfo;
 import org.junit.jupiter.api.TestReporter;
-
-import net.bytebuddy.asm.Advice.This;
 class CalculateAreaTest {
 	
 	private CalculateArea calculateArea;
@@ -70,7 +67,7 @@ class CalculateAreaTest {
 	void afterEachMethod() {
 		System.out.println("After Each method");
 	}
-	
+	//@Tag("hey")
 	@Test
 	@DisplayName("Rectacle Area")
 	
